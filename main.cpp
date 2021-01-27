@@ -3,6 +3,7 @@
 #include<string>
 
 //creating structure for storing the details of the patients
+//code is uploaded to the github
 struct Patient{
     std::string name;
     int room_number;
@@ -54,15 +55,35 @@ int main(){
             
         }
 
+        char selection;
+        std::cout<<"\nDo you want to display the data?[y/n]";
+        std::cin>>selection;
+        
+        if(selection=='y'){
+            
+            std::cout<<"\nEnter the patient number:";
+            std::cin>>patient_number;
+            std::cout<<"\nName:"<<patient[patient_number].name;
+            std::cout<<"\nRoom Number:"<<patient[patient_number].room_number;
+            std::cout<<"\nBlood Group:"<<patient[patient_number].blood_group;
+            std::cout<<"\nWeight:"<<patient[patient_number].weight;
+            std::cout<<"\nDisease:"<<patient[patient_number].weight;
+            std::cout<<"\nContact Number:"<<patient[patient_number].phone_number;
+            std::cout<<"\nRemark from doctor:"<<patient[patient_number].remark;
+            std::cout<<"\nEnd";
+        }
+
     }
     
 
     else if(choice==2){
         
+               if((patient[1].name).size()==0){
+                std::cout<<"\nThe list is empty";
+            }
 
-       
-            
-            std::cout<<"\nEnter the patient number:";
+            else{
+                 std::cout<<"\nEnter the patient number:";
             std::cin>>patient_number;
             std::cout<<"\nName:"<<patient[patient_number].name;
             std::cout<<"\nRoom Number:"<<patient[patient_number].room_number;
@@ -72,32 +93,11 @@ int main(){
             std::cout<<"\nContact Number:"<<patient[patient_number].phone_number;
             std::cout<<"\nRemark from doctor:"<<patient[patient_number].remark;
             std::cout<<"\nEnd";
+
+            }
        
-            
 
-        }
-
-        char selection;
-        std::cout<<"\nDo you want to display the data?[y/n]";
-        std::cin>>selection;
-
-        if(selection='y'){
-            std::cout<<"\nEnter the patient number:";
-            std::cin>>patient_number;
-            std::cout<<"\nName:"<<patient[patient_number].name;
-            std::cout<<"\nRoom Number:"<<patient[patient_number].room_number;
-            std::cout<<"\nBlood Group:"<<patient[patient_number].blood_group;
-            std::cout<<"\nWeight:"<<patient[patient_number].weight;
-            std::cout<<"\nDisease:"<<patient[patient_number].weight;
-            std::cout<<"\nContact Number:"<<patient[patient_number].phone_number;
-            std::cout<<"\nRemark from doctor:"<<patient[patient_number].remark;
-            std::cout<<"\nEnd";
-        }
-
-        else{
-            std::cout<<"\nAlright.have a nice day ahead";
-        }
-
+    }
     
 return 0;
 }
