@@ -1,5 +1,5 @@
 # Hospital_Management_System
-In this program we take details of the patient of a hostpital and store them in the structure. Details taken are:
+In this program we take details of the patients of a hostpital and store them in the structure. Details taken are:
 1. Name
 2. Age
 3. Blood Group
