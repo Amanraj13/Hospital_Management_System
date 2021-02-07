@@ -7,6 +7,6 @@ In this program we take details of the patients of a hostpital and store them in
 5. Contact Number
 6. Room Number
 7. Disease
-8. Doctor's Remark
+8. Doctor's Remarks
 
 The details are also displayed when chosen to do so
